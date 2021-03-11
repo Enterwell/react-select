@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import EwSelect from "./EwSelect";
+import Select from "./Select";
 
 /** Helper function that delays our "api" calls so that we can test for loading indicators.
  * @param delay Amount to delay for
@@ -82,7 +82,7 @@ const App = () => {
 
   return (
     <div>
-      <EwSelect
+      <Select
         multiple
         items={staticItems}
         placeholder="Select a Passenger"

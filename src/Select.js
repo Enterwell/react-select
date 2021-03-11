@@ -3,7 +3,7 @@ import Autocomplete from "@material-ui/lab/Autocomplete";
 import { TextField } from "@material-ui/core";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-const EwSelect = ({
+const Select = ({
   multiple,
   items,
   placeholder,
@@ -149,4 +149,4 @@ const EwSelect = ({
   );
 };
 
-export default EwSelect;
+export default Select;
