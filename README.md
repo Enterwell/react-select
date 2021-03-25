@@ -4,7 +4,13 @@ The Select control for [React](https://reactjs.com). Wrapper above [Material UI 
 
 ## Installation and usage
 
-#### With React Component
+### Build
+
+| `yarn build` | Build the sample app |
+| `yarn start` | Start the sample app server|
+| `yarn test` | Run tests |
+
+### With React Component
 
 ```js
 import React from "react";
@@ -68,7 +74,7 @@ class App extends React.Component {
 }
 ```
 
-#### With React Hooks
+### With React Hooks
 
 ```js
 import React, { useState } from "react";
@@ -137,6 +143,7 @@ Common props you may want to specify include:
 - `pageSize` - specify the number of options the component will request when
 
 ### Items
+
 Option items passed to the component need to be of type:
 
 ```js
@@ -144,15 +151,18 @@ Option items passed to the component need to be of type:
 ```
 
 ### onPage
+
 onPage property points to the callback function that will be called whenever component requests new page
 
 ```js
 handlePageRequested: (filter: (string | null), page: number, pageSize: number) => Promise<void>
 ```
-where: 
-+ filter: (string | null)
-  + a string that represents user input at the moment of requesting a new page. Value can be and will be null the first time component requests new data and as long as user did not type anything. After typing and emptying the input, value is an empty string.
-+ page: number:
-  + index of the new page to paginate the data for.
-+ pageSize: number:
-  + size of the page.
+
+where:
+
+- filter: (string | null)
+  - a string that represents user input at the moment of requesting a new page. Value can be and will be null the first time component requests new data and as long as user did not type anything. After typing and emptying the input, value is an empty string.
+- page: number:
+  - index of the new page to paginate the data for.
+- pageSize: number:
+  - size of the page
