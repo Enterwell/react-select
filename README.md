@@ -1,3 +1,7 @@
+# Depracated - this is now part of [Enterwell/UI](https://github.com/Enterwell/ui) monorepo.
+
+----
+
 # React Select
 
 The Select control for [React](https://reactjs.com). Wrapper above [Material UI Autocomplete](https://material-ui.com/components/autocomplete/) that supports pagination on menu scroll.
